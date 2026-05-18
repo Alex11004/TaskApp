@@ -4,8 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio | TaskApp</title>
+    <link rel="stylesheet" href="../../styles/index/index.css">
 </head>
 <body>
+
+    <header>
+
+        <nav>
+            <a class="logo" href="index.html">TaskApp</a>
+
+            <div class="categorias">
+
+                <a href="index.html">Inicio</a>
+
+                <a href="#">Tareas</a>
+
+                <a href="#">Perfil</a>
+
+                <a href="#">Configuración</a>
+
+                <a href="../landing/landing.html">Salir</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="app-main">
+
+        <section class="dashboard-header">
+
+            <h2>Bienvenido</h2>
+
+            <p>Tienes tareas pendientes.</p>
+        </section>
+
+        <section class="tasks">
+
+            <h3 class="section-title">Mis tareas</h3>
+
+            <div class="task-cards">
+
+                <div class="task-card">
+                    <div class="task-info">
+                        <h4>Estudiar CSS</h4>
+                        <p>Practicar flexbox y grid haciendo ejercicios.</p>
+                    </div>
+                    <span class="estado-pendiente">Pendiente</span>
+                </div>
+
+                <div class="task-card">
+                    <div class="task-info">
+                        <h4>DER</h4>
+                        <p>Investigar sobre los diagramas de entidad-relación.</p>
+                    </div>
+                    <span class="estado-progreso">En progreso</span>
+                </div>
+
+                <div class="task-card">
+                    <div class="task-info">
+                        <h4>Repasar JS</h4>
+                        <p>Leer los apuntes de la clase y hacer un resumen.</p>
+                    </div>
+                    <span class="estado-calificar">Por calificar</span>
+                </div>
+
+            </div>
+        </section>
+    </main>
     
 </body>
 </html>
