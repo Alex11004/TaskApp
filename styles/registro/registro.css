@@ -35,20 +35,20 @@ body{
 .register-header{
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    position: relative;
     margin-bottom: 30px;
-    margin-left: 32px;
-    justify-content: flex-start;
 }
 
 .register-header h1{
     font-size: 24px;
-    margin: 0px;
 }
 
 .back{
     text-decoration: none;
     color: var(--primary);
+    position: absolute;
+    left: 0;
 
     font-size: 20px;
     font-weight: bold;
