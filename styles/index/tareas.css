@@ -5,6 +5,10 @@
     --white: #ffffff;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +17,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--bg);
+    background-color: var(--white);
     color: var(--text);
 
     min-height: 100vh;
@@ -36,7 +40,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 5px 30px;
-    background-color: var(--white);
+    background-color: var(--bg);
     color: var(--primary);
     border-bottom: 1px solid transparent;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -53,7 +57,7 @@ nav a{
 }
 
 nav a:hover{
-    background-color: var(--white);
+    background-color: var(--bg);
     color: var(--text);
     transform: translateY(10px);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
@@ -191,8 +195,8 @@ nav a:hover::after{
 .status-card-ok:hover{
     transform: translateY(-5px);
     background-color: var(--white);
-    border-color: lime;
-    color: lime;
+    border-color: limegreen;
+    color: limegreen;
 }
 
 .status-card-ok p{
@@ -330,6 +334,8 @@ nav a:hover::after{
     border-radius: 6px;
     cursor: pointer;
     transition: 0.2s ease;
+    margin-left: 20px;
+    text-decoration: none;
 }
 
 .task-btn:hover{
@@ -344,6 +350,64 @@ nav a:hover::after{
 .task-info p{
     font-size: 14px;
     color: #666;
+}
+
+.task-popup{
+    display: none;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 15px;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+.task-popup:target{
+    display: block;
+    scroll-margin-top: 300px;
+}
+
+.popup-actions{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.popup-actions button{
+    padding: 6px 10px;
+    border: none;
+    background: limegreen;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.popup-actions button:hover{
+    transform: scale(1.1);
+}
+
+#disabled-btn{
+    background-color: #a4a4a4;
+    cursor: not-allowed;
+}
+
+.close-btn{
+    display: inline-flex;
+    margin-top: 15px;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: var(--primary);
+    color: var(--white);
+    border: 2px solid var(--primary);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.close-btn:hover{
+    transform: scale(1.1);
+
 }
 
 .footer{
