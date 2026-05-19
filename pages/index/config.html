@@ -3,10 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Configuración | TaskApp</title>
+    <title>Configuración - General | TaskApp</title>
     <link rel="stylesheet" href="../../styles/index/config.css">
 </head>
 <body>
     
+    <header>
+
+        <nav>
+            <div class="logo">
+                <h1>TaskApp</h1>
+            </div>
+
+            <div class="categorias">
+
+                <a href="index.html">Inicio</a>
+
+                <a href="tareas.html">Mis tareas</a>
+
+                <a href="config.html">Configuración</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="config-main">
+
+        <section class="config-header">
+
+            <h2>Configuración</h2>
+
+        </section >
+
+        <section class="config-options">
+            
+            <div class="layout">
+
+                <aside class="sidebar">
+                    <a href="#general">General</a>
+                    <a href="#apariencia">Apariencia</a>
+                    <a href="#notificaciones">Notificaciones</a>
+                    <a href="#salir">Cerrar sesión</a>
+                </aside>
+
+                <div class="config-content">
+
+                    <section id="general" class="content-section">
+                        <h2>General</h2>
+
+                        <div class="setting-card">
+                            <h3>Nombre de usuario</h3>
+                            <p>Alex11004</p>
+                            <button>Editar</button>
+                        </div>
+
+                        <div class="setting-card">
+                            <h3>Correo electrónico</h3>
+                            <p>castilloluisalejo12@gmail.com</p>
+                            <button>Editar</button>
+                        </div>
+
+                        <div class="setting-card">
+                            <h3>Idioma</h3>
+                            <select>
+                                <option>Español</option>
+                                <option>Inglés</option>
+                                <option>Francés</option>
+                                <option>Ruso</option>
+                                <option>Alemán</option>
+                            </select>
+                        </div>
+
+                    </section>
+
+                    <section id="apariencia" class="content-section">
+                        <h2>Apariencia</h2>
+                        
+                        <div class="setting-card">
+                            <h3>Tema</h3>
+                            <select>
+                                <option>Tema del dispositivo</option>
+                                <option>Claro</option>
+                                <option>Oscuro</option>
+                            </select>
+                        </div>
+
+                        <div class="setting-card">
+                            <h3>Color principal</h3>
+                            <select>
+                                <option>Azul</option>
+                                <option>Amarillo</option>
+                                <option>Verde</option>
+                                <option>Rojo</option>
+                                <option>Naranja</option>
+                                <option>Morado</option>
+                                <option>Rosado</option>
+                            </select>
+                        </div>
+
+                        <div class="setting-card">
+                            <h3>Tamaño de fuente</h3>
+                            <input type="range" min="25" max="100" value="50">
+                            <p>50%</p>
+                        </div>
+
+                    </section>
+
+                    <section id="notificaciones" class="content-section">
+                        <h2>Notificaciones</h2>
+                        
+                        <div class="setting-card">
+                            <h3>Recordatorios</h3>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                            <span class="status">Activados</span>
+                        </div>
+
+                        <div class="setting-card">
+                            <h3>Correos de confirmación de entrega</h3>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                            <span class="status">Desactivados</span>
+                        </div>
+
+                        <div class="setting-card">
+                            <h3>Alertas de tareas atrasadas</h3>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                            <span class="status">Activadas</span>
+                        </div>
+
+                    </section>
+
+                    <section id="salir" class="content-section">
+                        <h2>Cerrar sesión</h2>
+                        <p>Cierre sesión para salir de TaskApp.</p>
+                        <a href="../landing/landing.html">
+                            <button class="logout-btn">Salir</button>
+                        </a>
+                    </section>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <p>© 2026 TaskApp. Todos los derechos reservados.</p>
+
+            <div class="footer-links">
+
+                <a href="#">Privacidad</a>
+
+                <a href="#">Términos</a>
+
+                <a href="#">Contacto</a>
+                
+            </div>
+
+        </div>
+
+    </footer>
+
 </body>
 </html>
